@@ -21,6 +21,7 @@
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QSplitter>
 #include <QtWidgets/QStatusBar>
@@ -44,6 +45,7 @@ public:
     QVBoxLayout *verticalLayout_3;
     QRadioButton *radioButton;
     QRadioButton *radioButton_2;
+    QSpacerItem *horizontalSpacer;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_8;
     QVBoxLayout *verticalLayout_2;
@@ -81,8 +83,10 @@ public:
     QSpinBox *spinBox_8;
     QSlider *horizontalSlider_6;
     QSlider *horizontalSlider_7;
+    QSpacerItem *verticalSpacer;
     QHBoxLayout *horizontalLayout_10;
     QLabel *label_11;
+    QSpacerItem *horizontalSpacer_2;
     QProgressBar *progressBar;
     QHBoxLayout *horizontalLayout_9;
     QLineEdit *lineEdit;
@@ -98,7 +102,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(40, 0, 323, 357));
+        widget->setGeometry(QRect(40, 0, 321, 367));
         gridLayout_3 = new QGridLayout(widget);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -141,7 +145,11 @@ public:
         verticalLayout_3->addWidget(radioButton_2);
 
 
-        gridLayout_2->addLayout(verticalLayout_3, 0, 1, 1, 1);
+        gridLayout_2->addLayout(verticalLayout_3, 0, 2, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer, 0, 1, 1, 1);
 
         splitter->addWidget(widget1);
 
@@ -338,12 +346,20 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_8);
 
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer);
+
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
         label_11 = new QLabel(widget);
         label_11->setObjectName(QString::fromUtf8("label_11"));
 
         horizontalLayout_10->addWidget(label_11);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_10->addItem(horizontalSpacer_2);
 
         progressBar = new QProgressBar(widget);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
@@ -377,6 +393,25 @@ public:
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
+        QObject::connect(horizontalSlider, SIGNAL(valueChanged(int)), spinBox, SLOT(setValue(int)));
+        QObject::connect(spinBox, SIGNAL(valueChanged(int)), horizontalSlider, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_2, SIGNAL(valueChanged(int)), spinBox_2, SLOT(setValue(int)));
+        QObject::connect(spinBox_2, SIGNAL(valueChanged(int)), horizontalSlider_2, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_3, SIGNAL(valueChanged(int)), spinBox_3, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_4, SIGNAL(valueChanged(int)), spinBox_4, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_9, SIGNAL(valueChanged(int)), spinBox_9, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_5, SIGNAL(valueChanged(int)), spinBox_5, SLOT(setValue(int)));
+        QObject::connect(spinBox_5, SIGNAL(valueChanged(int)), horizontalSlider_5, SLOT(setValue(int)));
+        QObject::connect(spinBox_9, SIGNAL(valueChanged(int)), horizontalSlider_9, SLOT(setValue(int)));
+        QObject::connect(spinBox_4, SIGNAL(valueChanged(int)), horizontalSlider_4, SLOT(setValue(int)));
+        QObject::connect(spinBox_3, SIGNAL(valueChanged(int)), horizontalSlider_3, SLOT(setValue(int)));
+        QObject::connect(spinBox_8, SIGNAL(valueChanged(int)), horizontalSlider_6, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_6, SIGNAL(valueChanged(int)), spinBox_8, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_8, SIGNAL(valueChanged(int)), spinBox_6, SLOT(setValue(int)));
+        QObject::connect(spinBox_6, SIGNAL(valueChanged(int)), horizontalSlider_8, SLOT(setValue(int)));
+        QObject::connect(spinBox_7, SIGNAL(valueChanged(int)), horizontalSlider_7, SLOT(setValue(int)));
+        QObject::connect(horizontalSlider_7, SIGNAL(valueChanged(int)), spinBox_7, SLOT(setValue(int)));
+        QObject::connect(lineEdit, SIGNAL(cursorPositionChanged(int,int)), progressBar, SLOT(setValue(int)));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
