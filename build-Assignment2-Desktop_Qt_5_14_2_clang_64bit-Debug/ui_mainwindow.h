@@ -77,7 +77,7 @@ public:
     QHBoxLayout *horizontalLayout_42;
     QLabel *label_47;
     QSpacerItem *horizontalSpacer_5;
-    QProgressBar *progressBar_4;
+    QProgressBar *N_Progress;
     QLabel *N_Grade;
     QHBoxLayout *horizontalLayout_43;
     QWidget *PIC10C;
@@ -120,7 +120,7 @@ public:
     QHBoxLayout *horizontalLayout_27;
     QLabel *label_31;
     QSpacerItem *horizontalSpacer_4;
-    QProgressBar *progressBar_3;
+    QProgressBar *P_Progress;
     QLabel *P_Grade;
     QHBoxLayout *horizontalLayout_28;
     QWidget *Math182;
@@ -174,7 +174,7 @@ public:
     QHBoxLayout *horizontalLayout_49;
     QLabel *label_55;
     QSpacerItem *horizontalSpacer_6;
-    QProgressBar *progressBar_5;
+    QProgressBar *A_Progress;
     QLabel *A_Grade;
     QLabel *final_label_5;
     QHBoxLayout *horizontalLayout_50;
@@ -408,11 +408,11 @@ public:
 
         horizontalLayout_42->addItem(horizontalSpacer_5);
 
-        progressBar_4 = new QProgressBar(layoutWidget_3);
-        progressBar_4->setObjectName(QString::fromUtf8("progressBar_4"));
-        progressBar_4->setValue(0);
+        N_Progress = new QProgressBar(layoutWidget_3);
+        N_Progress->setObjectName(QString::fromUtf8("N_Progress"));
+        N_Progress->setValue(0);
 
-        horizontalLayout_42->addWidget(progressBar_4);
+        horizontalLayout_42->addWidget(N_Progress);
 
         N_Grade = new QLabel(layoutWidget_3);
         N_Grade->setObjectName(QString::fromUtf8("N_Grade"));
@@ -636,11 +636,11 @@ public:
 
         horizontalLayout_27->addItem(horizontalSpacer_4);
 
-        progressBar_3 = new QProgressBar(layoutWidget_2);
-        progressBar_3->setObjectName(QString::fromUtf8("progressBar_3"));
-        progressBar_3->setValue(0);
+        P_Progress = new QProgressBar(layoutWidget_2);
+        P_Progress->setObjectName(QString::fromUtf8("P_Progress"));
+        P_Progress->setValue(0);
 
-        horizontalLayout_27->addWidget(progressBar_3);
+        horizontalLayout_27->addWidget(P_Progress);
 
         P_Grade = new QLabel(layoutWidget_2);
         P_Grade->setObjectName(QString::fromUtf8("P_Grade"));
@@ -928,11 +928,11 @@ public:
 
         horizontalLayout_49->addItem(horizontalSpacer_6);
 
-        progressBar_5 = new QProgressBar(layoutWidget_4);
-        progressBar_5->setObjectName(QString::fromUtf8("progressBar_5"));
-        progressBar_5->setValue(0);
+        A_Progress = new QProgressBar(layoutWidget_4);
+        A_Progress->setObjectName(QString::fromUtf8("A_Progress"));
+        A_Progress->setValue(0);
 
-        horizontalLayout_49->addWidget(progressBar_5);
+        horizontalLayout_49->addWidget(A_Progress);
 
         A_Grade = new QLabel(layoutWidget_4);
         A_Grade->setObjectName(QString::fromUtf8("A_Grade"));
@@ -1015,7 +1015,7 @@ public:
         QObject::connect(N_MT1, SIGNAL(valueChanged(int)), horizontalSlider_40, SLOT(setValue(int)));
         QObject::connect(comboBox, SIGNAL(currentIndexChanged(int)), stackedWidget, SLOT(setCurrentIndex(int)));
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

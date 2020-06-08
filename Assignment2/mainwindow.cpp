@@ -111,6 +111,7 @@ void MainWindow::pic_final_grade1()
     pic_hw = pic_hw1+pic_hw2+pic_hw3+pic_hw4+pic_hw5;
     pic_grade1 = ((pic_hw)*0.2 + (pic_mt)*2*0.3 + (pic_final)*2*0.3 +(pic_final_prj)*2*0.2);
     ui->P_Grade->setNum(pic_grade1);
+    ui->P_Progress->setValue(pic_grade1);
 
 }
 
@@ -119,6 +120,7 @@ void MainWindow::pic_final_grade2()
     pic_hw = pic_hw1+pic_hw2+pic_hw3+pic_hw4+pic_hw5;
     pic_grade2 = ((pic_hw)*0.2 + (pic_final)*2*0.5 +(pic_final_prj)*2*0.3);
     ui->P_Grade->setNum(pic_grade2);
+    ui->P_Progress->setValue(pic_grade2);
 }
 
 
@@ -254,6 +256,7 @@ void MainWindow::alg_final_grade1()
     alg_hw = (alg_hw1+alg_hw2+alg_hw3+alg_hw4+alg_hw5+alg_hw6+alg_hw7+alg_hw8)*1.25;
     alg_grade1 = ((alg_hw)*0.3 + (alg_mt)*2*0.2 + (alg_final)*0.5 );
     ui->A_Grade->setNum(alg_grade1);
+    ui->A_Progress->setValue(alg_grade1);
 }
 
 void MainWindow::alg_final_grade2()
@@ -261,6 +264,7 @@ void MainWindow::alg_final_grade2()
     alg_hw = (alg_hw1+alg_hw2+alg_hw3+alg_hw4+alg_hw5+alg_hw6+alg_hw7+alg_hw8)*1.25;
     alg_grade2 = ((alg_hw)*0.3 + (alg_final)*0.7 );
     ui->A_Grade->setNum(alg_grade2);
+    ui->A_Progress->setValue(alg_grade2);
 }
 
 void MainWindow::on_a_scheme1_clicked()
@@ -322,4 +326,5 @@ void MainWindow::nwk_final_grade(){
     nwk_hw = (nwk_hw1+nwk_hw2+nwk_hw3+nwk_hw4)/4;
     nwk_grade = ((nwk_hw)*0.3 + (nwk_mt1)*0.2 + (nwk_mt2)*0.2 + (nwk_final)*0.3 );
     ui->N_Grade->setNum(nwk_grade);
+    ui->N_Progress->setValue(nwk_grade);
 }

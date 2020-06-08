@@ -77,7 +77,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Math168">
      <widget class="QWidget" name="layoutWidget_3">
@@ -312,7 +312,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QProgressBar" name="progressBar_4">
+          <widget class="QProgressBar" name="N_Progress">
            <property name="value">
             <number>0</number>
            </property>
@@ -585,7 +585,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QProgressBar" name="progressBar_3">
+          <widget class="QProgressBar" name="P_Progress">
            <property name="value">
             <number>0</number>
            </property>
@@ -964,7 +964,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QProgressBar" name="progressBar_5">
+          <widget class="QProgressBar" name="A_Progress">
            <property name="value">
             <number>0</number>
            </property>
