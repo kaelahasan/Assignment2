@@ -77,7 +77,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Math168">
      <widget class="QWidget" name="layoutWidget_3">
@@ -437,30 +437,6 @@
              </item>
             </layout>
            </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_26">
-             <item>
-              <widget class="QLabel" name="label_27">
-               <property name="text">
-                <string>HW 6</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QSlider" name="horizontalSlider_24">
-               <property name="maximum">
-                <number>20</number>
-               </property>
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QSpinBox" name="P_HW6"/>
-             </item>
-            </layout>
-           </item>
           </layout>
          </item>
          <item>
@@ -468,7 +444,7 @@
            <item row="3" column="0">
             <widget class="QSlider" name="horizontalSlider_25">
              <property name="maximum">
-              <number>40</number>
+              <number>50</number>
              </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
@@ -507,15 +483,23 @@
             </widget>
            </item>
            <item row="8" column="0">
-            <widget class="QSpinBox" name="P_F_Prj"/>
+            <widget class="QSpinBox" name="P_F_Prj">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+            </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QSpinBox" name="P_MT"/>
+            <widget class="QSpinBox" name="P_MT">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+            </widget>
            </item>
            <item row="6" column="0">
             <widget class="QSlider" name="horizontalSlider_27">
              <property name="maximum">
-              <number>60</number>
+              <number>50</number>
              </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
@@ -523,21 +507,25 @@
             </widget>
            </item>
            <item row="5" column="0">
-            <widget class="QSpinBox" name="P_Final"/>
+            <widget class="QSpinBox" name="P_Final">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_5">
+        <widget class="QRadioButton" name="p_scheme1">
          <property name="text">
           <string>Scheme 1</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QRadioButton" name="radioButton_6">
+        <widget class="QRadioButton" name="p_scheme2">
          <property name="text">
           <string>Scheme 2</string>
          </property>
@@ -575,7 +563,7 @@
          <item>
           <widget class="QLabel" name="P_Grade">
            <property name="text">
-            <string>testing</string>
+            <string>0</string>
            </property>
           </widget>
          </item>
@@ -799,7 +787,7 @@
          <item>
           <layout class="QGridLayout" name="gridLayout_7">
            <item row="9" column="0">
-            <widget class="QRadioButton" name="radioButton_10">
+            <widget class="QRadioButton" name="n_scheme2">
              <property name="text">
               <string>Scheme 2</string>
              </property>
@@ -846,7 +834,7 @@
             </widget>
            </item>
            <item row="8" column="0">
-            <widget class="QRadioButton" name="radioButton_9">
+            <widget class="QRadioButton" name="n_scheme1">
              <property name="text">
               <string>Scheme 1</string>
              </property>
@@ -1090,38 +1078,6 @@
     <hint type="destinationlabel">
      <x>202</x>
      <y>282</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_24</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>P_HW6</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>193</x>
-     <y>326</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>238</x>
-     <y>329</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>P_HW6</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>horizontalSlider_24</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>243</x>
-     <y>324</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>204</x>
-     <y>324</y>
     </hint>
    </hints>
   </connection>
