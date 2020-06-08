@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[5];
-    char stringdata0[67];
+    char stringdata0[56];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,14 +33,14 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 23), // "on_spinBox_valueChanged"
-QT_MOC_LITERAL(2, 35, 0), // ""
-QT_MOC_LITERAL(3, 36, 4), // "arg1"
-QT_MOC_LITERAL(4, 41, 25) // "on_spinBox_2_valueChanged"
+QT_MOC_LITERAL(1, 11, 21), // "on_P_HW1_valueChanged"
+QT_MOC_LITERAL(2, 33, 0), // ""
+QT_MOC_LITERAL(3, 34, 4), // "arg1"
+QT_MOC_LITERAL(4, 39, 16) // "pic_final_grade1"
 
     },
-    "MainWindow\0on_spinBox_valueChanged\0\0"
-    "arg1\0on_spinBox_2_valueChanged"
+    "MainWindow\0on_P_HW1_valueChanged\0\0"
+    "arg1\0pic_final_grade1"
 };
 #undef QT_MOC_LITERAL
 
@@ -59,11 +59,11 @@ static const uint qt_meta_data_MainWindow[] = {
 
  // slots: name, argc, parameters, tag, flags
        1,    1,   24,    2, 0x08 /* Private */,
-       4,    1,   27,    2, 0x08 /* Private */,
+       4,    0,   27,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    3,
-    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -74,8 +74,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 1: _t->on_spinBox_2_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->on_P_HW1_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->pic_final_grade1(); break;
         default: ;
         }
     }

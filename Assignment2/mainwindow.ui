@@ -44,17 +44,17 @@
             <widget class="QComboBox" name="comboBox">
              <item>
               <property name="text">
+               <string>Math 168: Networks</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
                <string>PIC 10C: Advanced Programming</string>
               </property>
              </item>
              <item>
               <property name="text">
                <string>Math 182: Algorithms</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Math 168: Networks</string>
               </property>
              </item>
             </widget>
@@ -77,7 +77,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Math168">
      <widget class="QWidget" name="layoutWidget_3">
@@ -290,7 +290,7 @@
          <item>
           <widget class="QLabel" name="N_Grade">
            <property name="text">
-            <string/>
+            <string>testing</string>
            </property>
           </widget>
          </item>
@@ -575,7 +575,7 @@
          <item>
           <widget class="QLabel" name="P_Grade">
            <property name="text">
-            <string/>
+            <string>testing</string>
            </property>
           </widget>
          </item>

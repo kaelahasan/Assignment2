@@ -14,12 +14,31 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_spinBox_valueChanged(int arg1)
+
+void MainWindow::on_P_HW1_valueChanged(int arg1)
 {
-    ui->label->setNum(arg1);
+    pic_final_grade1();
 }
 
-void MainWindow::on_spinBox_2_valueChanged(int arg1)
+/*
+void MainWindow::pic_final_grade1()
 {
-
+    ui->P_Grade->setNum(pic_grade1);
 }
+
+
+void MainWindow::on_N_HW1_valueChanged(int n_hw1)
+{
+    nwk_hw1 = &n_hw1;
+}
+*/
+
+void MainWindow::pic_final_grade1()
+{
+    ui->P_Grade->setNum(ui->P_HW1->value());
+}
+
+
+
+
+
