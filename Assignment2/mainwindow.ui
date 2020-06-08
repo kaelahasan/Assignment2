@@ -77,7 +77,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Math168">
      <widget class="QWidget" name="layoutWidget_3">
@@ -610,7 +610,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW1"/>
+              <widget class="QSpinBox" name="A_HW1">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -634,7 +638,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW2"/>
+              <widget class="QSpinBox" name="A_HW2">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -658,7 +666,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW3"/>
+              <widget class="QSpinBox" name="A_HW3">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -682,7 +694,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW4"/>
+              <widget class="QSpinBox" name="A_HW4">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -706,7 +722,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW5"/>
+              <widget class="QSpinBox" name="A_HW5">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -730,7 +750,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW6"/>
+              <widget class="QSpinBox" name="A_HW6">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -754,7 +778,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW7"/>
+              <widget class="QSpinBox" name="A_HW7">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -778,7 +806,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="A_HW8_2"/>
+              <widget class="QSpinBox" name="A_HW8_2">
+               <property name="maximum">
+                <number>10</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -796,7 +828,7 @@
            <item row="6" column="0">
             <widget class="QSlider" name="horizontalSlider_49">
              <property name="maximum">
-              <number>65</number>
+              <number>100</number>
              </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
@@ -804,7 +836,11 @@
             </widget>
            </item>
            <item row="5" column="0">
-            <widget class="QSpinBox" name="A_Final"/>
+            <widget class="QSpinBox" name="A_Final">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
            </item>
            <item row="1" column="0">
             <widget class="QLabel" name="label_54">
@@ -824,7 +860,11 @@
             </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QSpinBox" name="A_MT"/>
+            <widget class="QSpinBox" name="A_MT">
+             <property name="maximum">
+              <number>50</number>
+             </property>
+            </widget>
            </item>
            <item row="4" column="0">
             <widget class="QLabel" name="label_53">

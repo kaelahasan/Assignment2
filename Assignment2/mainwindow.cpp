@@ -15,6 +15,7 @@ MainWindow::~MainWindow()
 
 
 
+//Calculating PIC 10C Grades
 void MainWindow::on_P_HW1_valueChanged(int arg1)
 {
     pic_hw1 = arg1;
@@ -134,13 +135,140 @@ void MainWindow::on_p_scheme2_clicked()
 
 
 
+//Calculating Math 182 Grades
+void MainWindow::on_A_HW1_valueChanged(int arg1)
+{
+    alg_hw1 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW2_valueChanged(int arg1)
+{
+    alg_hw2 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW3_valueChanged(int arg1)
+{
+    alg_hw3 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW4_valueChanged(int arg1)
+{
+    alg_hw4 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW5_valueChanged(int arg1)
+{
+    alg_hw5 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW6_valueChanged(int arg1)
+{
+    alg_hw6 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW7_valueChanged(int arg1)
+{
+    alg_hw7 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_HW8_2_valueChanged(int arg1)
+{
+    alg_hw8 = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
+
+void MainWindow::on_A_MT_valueChanged(int arg1)
+{
+    alg_mt = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
 
 
 
+void MainWindow::on_A_Final_valueChanged(int arg1)
+{
+    alg_final = arg1;
+    if(alg_scheme){
+        alg_final_grade1();
+    }
+    else if(!alg_scheme){
+        alg_final_grade2();
+    }
+}
 
 
+void MainWindow::alg_final_grade1()
+{
+    alg_hw = (alg_hw1+alg_hw2+alg_hw3+alg_hw4+alg_hw5+alg_hw6+alg_hw7+alg_hw8)*1.25;
+    alg_grade1 = ((alg_hw)*0.3 + (alg_mt)*2*0.2 + (alg_final)*0.5 );
+    ui->A_Grade->setNum(alg_grade1);
+}
 
+void MainWindow::alg_final_grade2()
+{
+    alg_hw = (alg_hw1+alg_hw2+alg_hw3+alg_hw4+alg_hw5+alg_hw6+alg_hw7+alg_hw8)*1.25;
+    alg_grade2 = ((alg_hw)*0.3 + (alg_final)*0.7 );
+    ui->A_Grade->setNum(alg_grade2);
+}
 
+void MainWindow::on_n_scheme1_clicked()
+{
+    alg_scheme = true;
+}
 
-
-
+void MainWindow::on_n_scheme2_clicked()
+{
+    alg_scheme = false;
+}

@@ -676,6 +676,7 @@ public:
 
         A_HW1 = new QSpinBox(layoutWidget_4);
         A_HW1->setObjectName(QString::fromUtf8("A_HW1"));
+        A_HW1->setMaximum(10);
 
         horizontalLayout_41->addWidget(A_HW1);
 
@@ -698,6 +699,7 @@ public:
 
         A_HW2 = new QSpinBox(layoutWidget_4);
         A_HW2->setObjectName(QString::fromUtf8("A_HW2"));
+        A_HW2->setMaximum(10);
 
         horizontalLayout_44->addWidget(A_HW2);
 
@@ -720,6 +722,7 @@ public:
 
         A_HW3 = new QSpinBox(layoutWidget_4);
         A_HW3->setObjectName(QString::fromUtf8("A_HW3"));
+        A_HW3->setMaximum(10);
 
         horizontalLayout_45->addWidget(A_HW3);
 
@@ -742,6 +745,7 @@ public:
 
         A_HW4 = new QSpinBox(layoutWidget_4);
         A_HW4->setObjectName(QString::fromUtf8("A_HW4"));
+        A_HW4->setMaximum(10);
 
         horizontalLayout_46->addWidget(A_HW4);
 
@@ -764,6 +768,7 @@ public:
 
         A_HW5 = new QSpinBox(layoutWidget_4);
         A_HW5->setObjectName(QString::fromUtf8("A_HW5"));
+        A_HW5->setMaximum(10);
 
         horizontalLayout_47->addWidget(A_HW5);
 
@@ -786,6 +791,7 @@ public:
 
         A_HW6 = new QSpinBox(layoutWidget_4);
         A_HW6->setObjectName(QString::fromUtf8("A_HW6"));
+        A_HW6->setMaximum(10);
 
         horizontalLayout_54->addWidget(A_HW6);
 
@@ -808,6 +814,7 @@ public:
 
         A_HW7 = new QSpinBox(layoutWidget_4);
         A_HW7->setObjectName(QString::fromUtf8("A_HW7"));
+        A_HW7->setMaximum(10);
 
         horizontalLayout_53->addWidget(A_HW7);
 
@@ -830,6 +837,7 @@ public:
 
         A_HW8_2 = new QSpinBox(layoutWidget_4);
         A_HW8_2->setObjectName(QString::fromUtf8("A_HW8_2"));
+        A_HW8_2->setMaximum(10);
 
         horizontalLayout_48->addWidget(A_HW8_2);
 
@@ -848,13 +856,14 @@ public:
 
         horizontalSlider_49 = new QSlider(layoutWidget_4);
         horizontalSlider_49->setObjectName(QString::fromUtf8("horizontalSlider_49"));
-        horizontalSlider_49->setMaximum(65);
+        horizontalSlider_49->setMaximum(100);
         horizontalSlider_49->setOrientation(Qt::Horizontal);
 
         gridLayout_7->addWidget(horizontalSlider_49, 6, 0, 1, 1);
 
         A_Final = new QSpinBox(layoutWidget_4);
         A_Final->setObjectName(QString::fromUtf8("A_Final"));
+        A_Final->setMaximum(100);
 
         gridLayout_7->addWidget(A_Final, 5, 0, 1, 1);
 
@@ -872,6 +881,7 @@ public:
 
         A_MT = new QSpinBox(layoutWidget_4);
         A_MT->setObjectName(QString::fromUtf8("A_MT"));
+        A_MT->setMaximum(50);
 
         gridLayout_7->addWidget(A_MT, 2, 0, 1, 1);
 
@@ -997,7 +1007,7 @@ public:
         QObject::connect(N_MT1, SIGNAL(valueChanged(int)), horizontalSlider_40, SLOT(setValue(int)));
         QObject::connect(comboBox, SIGNAL(currentIndexChanged(int)), stackedWidget, SLOT(setCurrentIndex(int)));
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

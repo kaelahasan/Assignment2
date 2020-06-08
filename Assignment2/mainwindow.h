@@ -17,6 +17,7 @@ public:
 
 private slots:
 
+    //Calculating PIC 10C Grades
     void on_P_HW1_valueChanged(int arg1);
     void on_P_HW2_valueChanged(int arg1);
     void on_P_HW3_valueChanged(int arg1);
@@ -30,28 +31,48 @@ private slots:
     void on_p_scheme1_clicked();
     void on_p_scheme2_clicked();
 
-    //void alg_final_grade1();
-    //void alg_final_grade2();
-    //void on_N_HW1_valueChanged(int arg1);
+    //Calcualting Math 182 Grades
+    void on_A_HW1_valueChanged(int arg1);
+    void on_A_HW2_valueChanged(int arg1);
+    void on_A_HW3_valueChanged(int arg1);
+    void on_A_HW4_valueChanged(int arg1);
+    void on_A_HW5_valueChanged(int arg1);
+    void on_A_HW6_valueChanged(int arg1);
+    void on_A_HW7_valueChanged(int arg1);
+    void on_A_HW8_2_valueChanged(int arg1);
+    void alg_final_grade1();
+    void alg_final_grade2();
 
 
 
 
+    void on_A_MT_valueChanged(int arg1);
 
+    void on_A_Final_valueChanged(int arg1);
+
+    void on_n_scheme1_clicked();
+
+    void on_n_scheme2_clicked();
 
 private:
+
+    //Storing PIC 10C Spinbox Values
     int pic_hw1 = 0;
     int pic_hw2 = 0;
     int pic_hw3 = 0;
     int pic_hw4 = 0;
     int pic_hw5 = 0;
-    int pic_hw = 0;
+    int pic_hw = 0; //stores sum of all hws
     int pic_mt = 0;
     int pic_final = 0;
     int pic_final_prj = 0;
-    int pic_grade1 = 0;
-    int pic_grade2 = 0;
-    bool pic_scheme = true;
+
+    //Calculating PIC 10C Final Grades with different schemes
+    int pic_grade1 = 0; //scheme1 Homework 20%, Midterm 30%, Final 30%, Final Project 20%
+    int pic_grade2 = 0; //scheme2 Homework 20%, Final 50%, Final Project 30%
+    bool pic_scheme = true; //scheme 1 automatically chosen, changes when scheme 2 is clicked
+
+    //Storing Math 182 Spinbox Values
     int alg_hw1 = 0;
     int alg_hw2 = 0;
     int alg_hw3 = 0;
@@ -60,17 +81,26 @@ private:
     int alg_hw6 = 0;
     int alg_hw7 = 0;
     int alg_hw8 = 0;
-    int alg_mt1 = 0;
-    int alg_mt2 = 0;
-    int alg_mt3 = 0;
-    int alg_grade1 = 0;
-    int alg_grade2 = 0;
+    int alg_hw = 0; //stores sum of all hws
+    int alg_mt = 0;
+    int alg_final = 0;
+
+    //Calculating Math 182 Final Grades with different schemes
+    int alg_grade1 = 0; //scheme 1
+    int alg_grade2 = 0; //scheme 2
+    bool alg_scheme = true; //scheme 1 automatically chosen, changes when scheme 2 is clicked
+
+
+    //Storing Math 168 Spinbox Values
     int nwk_hw1 = 0;
     int nwk_hw2 = 0;
     int nwk_hw3 = 0;
     int nwk_hw4 = 0;
-    int nwk_mt = 0;
+    int nwk_mt1 = 0;
+    int nwk_mt2 = 0;
     int nwk_final = 0;
+
+    //There is only one scheme for Math 168
     int nwk_grade = 0;
 
     Ui::MainWindow *ui;
