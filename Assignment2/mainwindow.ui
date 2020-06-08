@@ -77,7 +77,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Math168">
      <widget class="QWidget" name="layoutWidget_3">
@@ -106,7 +106,7 @@
              <item>
               <widget class="QSlider" name="horizontalSlider_34">
                <property name="maximum">
-                <number>30</number>
+                <number>100</number>
                </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -114,7 +114,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="N_HW1"/>
+              <widget class="QSpinBox" name="N_HW1">
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -130,7 +134,7 @@
              <item>
               <widget class="QSlider" name="horizontalSlider_35">
                <property name="maximum">
-                <number>30</number>
+                <number>100</number>
                </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -138,7 +142,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="N_HW2"/>
+              <widget class="QSpinBox" name="N_HW2">
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -154,7 +162,7 @@
              <item>
               <widget class="QSlider" name="horizontalSlider_36">
                <property name="maximum">
-                <number>30</number>
+                <number>100</number>
                </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -162,7 +170,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="N_HW3"/>
+              <widget class="QSpinBox" name="N_HW3">
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -178,7 +190,7 @@
              <item>
               <widget class="QSlider" name="horizontalSlider_37">
                <property name="maximum">
-                <number>30</number>
+                <number>100</number>
                </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -186,7 +198,11 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="N_HW4"/>
+              <widget class="QSpinBox" name="N_HW4">
+               <property name="maximum">
+                <number>100</number>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -197,7 +213,7 @@
            <item row="3" column="0">
             <widget class="QSlider" name="horizontalSlider_40">
              <property name="maximum">
-              <number>50</number>
+              <number>100</number>
              </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
@@ -236,15 +252,26 @@
             </widget>
            </item>
            <item row="8" column="0">
-            <widget class="QSpinBox" name="N_Final"/>
+            <widget class="QSpinBox" name="N_Final">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
            </item>
            <item row="2" column="0">
-            <widget class="QSpinBox" name="N_MT1"/>
+            <widget class="QSpinBox" name="N_MT1">
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
            </item>
            <item row="6" column="0">
             <widget class="QSlider" name="horizontalSlider_42">
              <property name="maximum">
-              <number>50</number>
+              <number>100</number>
              </property>
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
@@ -252,7 +279,11 @@
             </widget>
            </item>
            <item row="5" column="0">
-            <widget class="QSpinBox" name="N_MT2"/>
+            <widget class="QSpinBox" name="N_MT2">
+             <property name="maximum">
+              <number>100</number>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -290,7 +321,7 @@
          <item>
           <widget class="QLabel" name="N_Grade">
            <property name="text">
-            <string>testing</string>
+            <string>0</string>
            </property>
           </widget>
          </item>
@@ -819,7 +850,7 @@
          <item>
           <layout class="QGridLayout" name="gridLayout_7">
            <item row="9" column="0">
-            <widget class="QRadioButton" name="n_scheme2">
+            <widget class="QRadioButton" name="a_scheme2">
              <property name="text">
               <string>Scheme 2</string>
              </property>
@@ -874,7 +905,7 @@
             </widget>
            </item>
            <item row="8" column="0">
-            <widget class="QRadioButton" name="n_scheme1">
+            <widget class="QRadioButton" name="a_scheme1">
              <property name="text">
               <string>Scheme 1</string>
              </property>
@@ -1049,11 +1080,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>187</x>
-     <y>197</y>
+     <y>220</y>
     </hint>
     <hint type="destinationlabel">
      <x>234</x>
-     <y>199</y>
+     <y>222</y>
     </hint>
    </hints>
   </connection>
@@ -1065,11 +1096,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>201</x>
-     <y>234</y>
+     <y>266</y>
     </hint>
     <hint type="destinationlabel">
      <x>246</x>
-     <y>234</y>
+     <y>266</y>
     </hint>
    </hints>
   </connection>
@@ -1081,11 +1112,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>240</x>
-     <y>244</y>
+     <y>276</y>
     </hint>
     <hint type="destinationlabel">
      <x>199</x>
-     <y>242</y>
+     <y>274</y>
     </hint>
    </hints>
   </connection>
@@ -1097,11 +1128,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
-     <y>275</y>
+     <y>316</y>
     </hint>
     <hint type="destinationlabel">
      <x>239</x>
-     <y>283</y>
+     <y>323</y>
     </hint>
    </hints>
   </connection>
@@ -1113,11 +1144,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>243</x>
-     <y>282</y>
+     <y>322</y>
     </hint>
     <hint type="destinationlabel">
      <x>202</x>
-     <y>282</y>
+     <y>323</y>
     </hint>
    </hints>
   </connection>
@@ -1292,7 +1323,7 @@
      <y>167</y>
     </hint>
     <hint type="destinationlabel">
-     <x>233</x>
+     <x>235</x>
      <y>166</y>
     </hint>
    </hints>
@@ -1388,7 +1419,7 @@
      <y>272</y>
     </hint>
     <hint type="destinationlabel">
-     <x>233</x>
+     <x>235</x>
      <y>272</y>
     </hint>
    </hints>

@@ -263,12 +263,63 @@ void MainWindow::alg_final_grade2()
     ui->A_Grade->setNum(alg_grade2);
 }
 
-void MainWindow::on_n_scheme1_clicked()
+void MainWindow::on_a_scheme1_clicked()
 {
     alg_scheme = true;
 }
 
-void MainWindow::on_n_scheme2_clicked()
+void MainWindow::on_a_scheme2_clicked()
 {
     alg_scheme = false;
+}
+
+
+
+
+void MainWindow::on_N_HW1_valueChanged(int arg1)
+{
+    nwk_hw1 = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::on_N_HW2_valueChanged(int arg1)
+{
+    nwk_hw2 = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::on_N_HW3_valueChanged(int arg1)
+{
+    nwk_hw3 = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::on_N_HW4_valueChanged(int arg1)
+{
+    nwk_hw4 = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::on_N_MT1_valueChanged(int arg1)
+{
+    nwk_mt1 = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::on_N_MT2_valueChanged(int arg1)
+{
+    nwk_mt2 = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::on_N_Final_valueChanged(int arg1)
+{
+    nwk_final = arg1;
+    nwk_final_grade();
+}
+
+void MainWindow::nwk_final_grade(){
+    nwk_hw = (nwk_hw1+nwk_hw2+nwk_hw3+nwk_hw4)/4;
+    nwk_grade = ((nwk_hw)*0.3 + (nwk_mt1)*0.2 + (nwk_mt2)*0.2 + (nwk_final)*0.3 );
+    ui->N_Grade->setNum(nwk_grade);
 }

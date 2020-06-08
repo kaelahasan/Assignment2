@@ -40,19 +40,23 @@ private slots:
     void on_A_HW6_valueChanged(int arg1);
     void on_A_HW7_valueChanged(int arg1);
     void on_A_HW8_2_valueChanged(int arg1);
+    void on_A_MT_valueChanged(int arg1);
+    void on_A_Final_valueChanged(int arg1);
     void alg_final_grade1();
     void alg_final_grade2();
+    void on_a_scheme1_clicked();
+    void on_a_scheme2_clicked();
 
+    //Calculating Math 168 Grades
+    void on_N_HW1_valueChanged(int arg1);
+    void on_N_HW2_valueChanged(int arg1);
+    void on_N_HW3_valueChanged(int arg1);
+    void on_N_HW4_valueChanged(int arg1);
+    void on_N_MT1_valueChanged(int arg1);
+    void on_N_MT2_valueChanged(int arg1);
+    void on_N_Final_valueChanged(int arg1);
+    void nwk_final_grade();
 
-
-
-    void on_A_MT_valueChanged(int arg1);
-
-    void on_A_Final_valueChanged(int arg1);
-
-    void on_n_scheme1_clicked();
-
-    void on_n_scheme2_clicked();
 
 private:
 
@@ -96,6 +100,7 @@ private:
     int nwk_hw2 = 0;
     int nwk_hw3 = 0;
     int nwk_hw4 = 0;
+    int nwk_hw = 0; //stores sum of all hws
     int nwk_mt1 = 0;
     int nwk_mt2 = 0;
     int nwk_final = 0;

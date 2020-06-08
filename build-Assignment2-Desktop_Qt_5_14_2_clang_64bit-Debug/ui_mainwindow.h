@@ -161,14 +161,14 @@ public:
     QSlider *horizontalSlider_46;
     QSpinBox *A_HW8_2;
     QGridLayout *gridLayout_7;
-    QRadioButton *n_scheme2;
+    QRadioButton *a_scheme2;
     QSlider *horizontalSlider_49;
     QSpinBox *A_Final;
     QLabel *label_54;
     QSlider *horizontalSlider_47;
     QSpinBox *A_MT;
     QLabel *label_53;
-    QRadioButton *n_scheme1;
+    QRadioButton *a_scheme1;
     QSpacerItem *verticalSpacer;
     QSpacerItem *verticalSpacer_5;
     QHBoxLayout *horizontalLayout_49;
@@ -248,13 +248,14 @@ public:
 
         horizontalSlider_34 = new QSlider(layoutWidget_3);
         horizontalSlider_34->setObjectName(QString::fromUtf8("horizontalSlider_34"));
-        horizontalSlider_34->setMaximum(30);
+        horizontalSlider_34->setMaximum(100);
         horizontalSlider_34->setOrientation(Qt::Horizontal);
 
         horizontalLayout_36->addWidget(horizontalSlider_34);
 
         N_HW1 = new QSpinBox(layoutWidget_3);
         N_HW1->setObjectName(QString::fromUtf8("N_HW1"));
+        N_HW1->setMaximum(100);
 
         horizontalLayout_36->addWidget(N_HW1);
 
@@ -270,13 +271,14 @@ public:
 
         horizontalSlider_35 = new QSlider(layoutWidget_3);
         horizontalSlider_35->setObjectName(QString::fromUtf8("horizontalSlider_35"));
-        horizontalSlider_35->setMaximum(30);
+        horizontalSlider_35->setMaximum(100);
         horizontalSlider_35->setOrientation(Qt::Horizontal);
 
         horizontalLayout_37->addWidget(horizontalSlider_35);
 
         N_HW2 = new QSpinBox(layoutWidget_3);
         N_HW2->setObjectName(QString::fromUtf8("N_HW2"));
+        N_HW2->setMaximum(100);
 
         horizontalLayout_37->addWidget(N_HW2);
 
@@ -292,13 +294,14 @@ public:
 
         horizontalSlider_36 = new QSlider(layoutWidget_3);
         horizontalSlider_36->setObjectName(QString::fromUtf8("horizontalSlider_36"));
-        horizontalSlider_36->setMaximum(30);
+        horizontalSlider_36->setMaximum(100);
         horizontalSlider_36->setOrientation(Qt::Horizontal);
 
         horizontalLayout_38->addWidget(horizontalSlider_36);
 
         N_HW3 = new QSpinBox(layoutWidget_3);
         N_HW3->setObjectName(QString::fromUtf8("N_HW3"));
+        N_HW3->setMaximum(100);
 
         horizontalLayout_38->addWidget(N_HW3);
 
@@ -314,13 +317,14 @@ public:
 
         horizontalSlider_37 = new QSlider(layoutWidget_3);
         horizontalSlider_37->setObjectName(QString::fromUtf8("horizontalSlider_37"));
-        horizontalSlider_37->setMaximum(30);
+        horizontalSlider_37->setMaximum(100);
         horizontalSlider_37->setOrientation(Qt::Horizontal);
 
         horizontalLayout_39->addWidget(horizontalSlider_37);
 
         N_HW4 = new QSpinBox(layoutWidget_3);
         N_HW4->setObjectName(QString::fromUtf8("N_HW4"));
+        N_HW4->setMaximum(100);
 
         horizontalLayout_39->addWidget(N_HW4);
 
@@ -334,7 +338,7 @@ public:
         gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
         horizontalSlider_40 = new QSlider(layoutWidget_3);
         horizontalSlider_40->setObjectName(QString::fromUtf8("horizontalSlider_40"));
-        horizontalSlider_40->setMaximum(50);
+        horizontalSlider_40->setMaximum(100);
         horizontalSlider_40->setOrientation(Qt::Horizontal);
 
         gridLayout_6->addWidget(horizontalSlider_40, 3, 0, 1, 1);
@@ -363,23 +367,27 @@ public:
 
         N_Final = new QSpinBox(layoutWidget_3);
         N_Final->setObjectName(QString::fromUtf8("N_Final"));
+        N_Final->setMaximum(100);
 
         gridLayout_6->addWidget(N_Final, 8, 0, 1, 1);
 
         N_MT1 = new QSpinBox(layoutWidget_3);
         N_MT1->setObjectName(QString::fromUtf8("N_MT1"));
+        N_MT1->setMinimum(0);
+        N_MT1->setMaximum(100);
 
         gridLayout_6->addWidget(N_MT1, 2, 0, 1, 1);
 
         horizontalSlider_42 = new QSlider(layoutWidget_3);
         horizontalSlider_42->setObjectName(QString::fromUtf8("horizontalSlider_42"));
-        horizontalSlider_42->setMaximum(50);
+        horizontalSlider_42->setMaximum(100);
         horizontalSlider_42->setOrientation(Qt::Horizontal);
 
         gridLayout_6->addWidget(horizontalSlider_42, 6, 0, 1, 1);
 
         N_MT2 = new QSpinBox(layoutWidget_3);
         N_MT2->setObjectName(QString::fromUtf8("N_MT2"));
+        N_MT2->setMaximum(100);
 
         gridLayout_6->addWidget(N_MT2, 5, 0, 1, 1);
 
@@ -849,10 +857,10 @@ public:
 
         gridLayout_7 = new QGridLayout();
         gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
-        n_scheme2 = new QRadioButton(layoutWidget_4);
-        n_scheme2->setObjectName(QString::fromUtf8("n_scheme2"));
+        a_scheme2 = new QRadioButton(layoutWidget_4);
+        a_scheme2->setObjectName(QString::fromUtf8("a_scheme2"));
 
-        gridLayout_7->addWidget(n_scheme2, 9, 0, 1, 1);
+        gridLayout_7->addWidget(a_scheme2, 9, 0, 1, 1);
 
         horizontalSlider_49 = new QSlider(layoutWidget_4);
         horizontalSlider_49->setObjectName(QString::fromUtf8("horizontalSlider_49"));
@@ -890,10 +898,10 @@ public:
 
         gridLayout_7->addWidget(label_53, 4, 0, 1, 1);
 
-        n_scheme1 = new QRadioButton(layoutWidget_4);
-        n_scheme1->setObjectName(QString::fromUtf8("n_scheme1"));
+        a_scheme1 = new QRadioButton(layoutWidget_4);
+        a_scheme1->setObjectName(QString::fromUtf8("a_scheme1"));
 
-        gridLayout_7->addWidget(n_scheme1, 8, 0, 1, 1);
+        gridLayout_7->addWidget(a_scheme1, 8, 0, 1, 1);
 
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -1007,7 +1015,7 @@ public:
         QObject::connect(N_MT1, SIGNAL(valueChanged(int)), horizontalSlider_40, SLOT(setValue(int)));
         QObject::connect(comboBox, SIGNAL(currentIndexChanged(int)), stackedWidget, SLOT(setCurrentIndex(int)));
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1029,7 +1037,7 @@ public:
         label_45->setText(QCoreApplication::translate("MainWindow", "Midterm II", nullptr));
         label_46->setText(QCoreApplication::translate("MainWindow", "Midterm I", nullptr));
         label_47->setText(QCoreApplication::translate("MainWindow", "Final Grade: ", nullptr));
-        N_Grade->setText(QCoreApplication::translate("MainWindow", "testing", nullptr));
+        N_Grade->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         label_22->setText(QCoreApplication::translate("MainWindow", "HW 1", nullptr));
         label_23->setText(QCoreApplication::translate("MainWindow", "HW 2", nullptr));
         label_24->setText(QCoreApplication::translate("MainWindow", "HW 3", nullptr));
@@ -1050,10 +1058,10 @@ public:
         label_59->setText(QCoreApplication::translate("MainWindow", "HW 6", nullptr));
         label_58->setText(QCoreApplication::translate("MainWindow", "HW 7", nullptr));
         label_51->setText(QCoreApplication::translate("MainWindow", "HW 8", nullptr));
-        n_scheme2->setText(QCoreApplication::translate("MainWindow", "Scheme 2", nullptr));
+        a_scheme2->setText(QCoreApplication::translate("MainWindow", "Scheme 2", nullptr));
         label_54->setText(QCoreApplication::translate("MainWindow", "Midterm", nullptr));
         label_53->setText(QCoreApplication::translate("MainWindow", "Final", nullptr));
-        n_scheme1->setText(QCoreApplication::translate("MainWindow", "Scheme 1", nullptr));
+        a_scheme1->setText(QCoreApplication::translate("MainWindow", "Scheme 1", nullptr));
         label_55->setText(QCoreApplication::translate("MainWindow", "Final Grade: ", nullptr));
         A_Grade->setText(QString());
         final_label_5->setText(QString());
