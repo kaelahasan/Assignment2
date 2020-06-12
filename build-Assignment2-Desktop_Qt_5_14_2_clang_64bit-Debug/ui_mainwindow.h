@@ -1015,7 +1015,7 @@ public:
         QObject::connect(N_MT1, SIGNAL(valueChanged(int)), horizontalSlider_40, SLOT(setValue(int)));
         QObject::connect(comboBox, SIGNAL(currentIndexChanged(int)), stackedWidget, SLOT(setCurrentIndex(int)));
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1063,7 +1063,7 @@ public:
         label_53->setText(QCoreApplication::translate("MainWindow", "Final", nullptr));
         a_scheme1->setText(QCoreApplication::translate("MainWindow", "Scheme 1", nullptr));
         label_55->setText(QCoreApplication::translate("MainWindow", "Final Grade: ", nullptr));
-        A_Grade->setText(QString());
+        A_Grade->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         final_label_5->setText(QString());
     } // retranslateUi
 

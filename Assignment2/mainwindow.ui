@@ -77,7 +77,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="Math168">
      <widget class="QWidget" name="layoutWidget_3">
@@ -973,7 +973,7 @@
          <item>
           <widget class="QLabel" name="A_Grade">
            <property name="text">
-            <string/>
+            <string>0</string>
            </property>
           </widget>
          </item>

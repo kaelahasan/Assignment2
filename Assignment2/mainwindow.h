@@ -90,8 +90,8 @@ private:
     int alg_final = 0;
 
     //Calculating Math 182 Final Grades with different schemes
-    int alg_grade1 = 0; //scheme 1
-    int alg_grade2 = 0; //scheme 2
+    int alg_grade1 = 0; //scheme 1 Homework 30%, Midterm 20%, Final 50%
+    int alg_grade2 = 0; //scheme 2 Homework 20%, Final 80%
     bool alg_scheme = true; //scheme 1 automatically chosen, changes when scheme 2 is clicked
 
 
@@ -106,7 +106,7 @@ private:
     int nwk_final = 0;
 
     //There is only one scheme for Math 168
-    int nwk_grade = 0;
+    int nwk_grade = 0; //Homework 30%, Midterm 1 20%, Midterm 2 20%, Final 30%
 
     Ui::MainWindow *ui;
 };
